@@ -72,4 +72,23 @@ const makaleVerisi = [
         icerik: "Selçuklu Devleti, Anadolu'nun kapılarını 1071 Malazgirt zaferiyle açarken beraberinde muazzam bir kültür ve sanat anlayışı getirmiştir. Selçuklu mimarisi, sadelik ve heybetin birleşimidir. \n\nÖzellikle 'Taç Kapılar' üzerindeki geometrik süslemeler ve taş işçiliği, bu medeniyetin matematiksel derinliğini gösterir. Kervansaraylar, dünyanın ilk sigortacılık ve sosyal devlet anlayışının örnekleridir; buralarda konaklayan yolcuların tüm ihtiyaçları üç gün boyunca ücretsiz karşılanırdı. Nizamülmülk'ün kurduğu Nizamiye Medreseleri ise dönemin üniversiteleri olup, bilim ve felsefenin zirve yaptığı yerlerdir. Konya'daki Karatay Medresesi ve Erzurum'daki Çifte Minareli Medrese, gökyüzünü andıran çinileriyle Selçuklu estetiğinin en güzel örnekleridir.",
         tarih: "01 Ocak 2026"
     }
+
+    function makaleleriGetir(filtre) {
+    const liste = document.getElementById('makale-listesi');
+    if (!liste) return;
+    liste.innerHTML = "";
+
+    makaleVerisi.forEach(m => {
+        if (filtre === 'hepsi' || m.kategori === filtre) {
+            liste.innerHTML += `
+                <div class="card">
+                    <small style="color:var(--altin); font-family:'Cinzel'">${m.kategori.replace('-',' ').toUpperCase()}</small>
+                    <h3 style="font-family:'Cinzel'; margin: 10px 0;">${m.baslik}</h3>
+                    <p>${m.ozet}</p>
+                    <a href="makale-detay.html?id=${m.id}" class="btn-oku">DEVAMINI OKU</a>
+                </div>
+            `;
+        }
+    });
+}
 ];
