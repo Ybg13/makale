@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim | Makale-i Tarih</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <a href="index.html" class="logo">Makale-i Tarih</a>
+    <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="antik-cag.html">Antik Çağ</a></li>
+        <li><a href="osmanli.html">Osmanlı</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+		<li><a href="islamiyetö-tr.html">İslamiyet Ö.T.T.</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <header style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-family: 'Cinzel', serif; color: var(--koyu-mermer);">İletişim-i Mahsus</h1>
+        <p style="font-style: italic; color: var(--altin);">Görüş ve önerileriniz bizim için kıymetlidir.</p>
+    </header>
+
+    <form action="https://formspree.io/f/xojnapeq" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+        
+        <div class="form-group">
+            <label style="font-family: 'Cinzel', serif; display: block; margin-bottom: 8px;">E-Posta Adresiniz</label>
+            <input type="email" name="email" required 
+                   style="width: 100%; padding: 15px; border: 1px solid #ddd; background: #fff; font-family: 'Lora', serif; box-sizing: border-box;">
+        </div>
+
+        <div class="form-group">
+            <label style="font-family: 'Cinzel', serif; display: block; margin-bottom: 8px;">Mesajınız</label>
+            <textarea name="message" required rows="6" 
+                      style="width: 100%; padding: 15px; border: 1px solid #ddd; background: #fff; font-family: 'Lora', serif; box-sizing: border-box; resize: vertical;"></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="btn-oku" style="border: none; cursor: pointer; width: 100%; font-size: 1rem; letter-spacing: 2px;">
+            Mektubu Gönder
+        </button>
+    </form>
+</div>
+<footer><p>YBG13™ &copy; 2026 | Makale-i Tarih</p></footer>
+</body>
+</html>

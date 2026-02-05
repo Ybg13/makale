@@ -1,0 +1,26 @@
+[
+    {
+        "id": "osmanli-dehizler",
+        "kategori": "osmanli",
+        "baslik": "İstanbul'un Gizli Dehlizleri",
+        "ozet": "Surların altındaki gizemli yollar ve sarnıçların hikayesi...",
+        "icerik": "İstanbul'un yedi tepesinin altında binlerce yıllık bir tarih yatmaktadır...",
+        "tarih": "5 Şubat 2026"
+    },
+    {
+        "id": "iskender-mirasi",
+        "kategori": "antik-cag",
+        "baslik": "Büyük İskender'in Mirası",
+        "ozet": "Helenizm kültürü dünyayı nasıl değiştirdi?",
+        "icerik": "Makedonya'dan Hindistan'a uzanan bu büyük yolculuk...",
+        "tarih": "4 Şubat 2026"
+    }
+	  {
+        "id": "boru",
+        "kategori": "miteoloji",
+        "baslik": "kökbörü",
+        "ozet": "Helenizm kültürü dünyayı nasıl değiştirdi?",
+        "icerik": "uçan kurt",
+        "tarih": "4 Şubat 2026"
+    }
+]
